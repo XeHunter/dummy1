@@ -1,0 +1,21 @@
+node_modules/
+dist/
+
+# Secrets / restricted files (org policy)
+.env
+.env.*
+!.env.example
+secrets/
+certificates/
+private-config/
+*.pem
+*.key
+**/credentials.json
+*.properties
+.npmrc
+.yarnrc.yml
+**/service-account*.json
+
+# Cypress artifacts
+cypress/videos/
+cypress/screenshots/

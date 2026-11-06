@@ -1,0 +1,23 @@
+{
+  "name": "lumina",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "preview:e2e": "vite preview --port 4173 --strictPort",
+    "cy:run": "node scripts/cypress-run.mjs",
+    "cy:open": "cypress open",
+    "test:e2e": "npm run build && start-server-and-test preview:e2e http://localhost:4173 cy:run"
+  },
+  "dependencies": {
+    "ethers": "6.17.0"
+  },
+  "devDependencies": {
+    "cypress": "16.2.0",
+    "start-server-and-test": "3.0.13",
+    "vite": "7.3.7"
+  }
+}
